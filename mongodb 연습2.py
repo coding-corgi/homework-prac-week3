@@ -10,5 +10,5 @@ same_movie = list(db.movies.find({'star': target_star})) #이미 여기서 if
 db.movies.update_many({'star':target_star}, {'$set' : {'star' :'0'}})
 
 
-# for i in same_movie:
-    # print(i['title'])
+for i in same_movie:
+    print(i['title'])
